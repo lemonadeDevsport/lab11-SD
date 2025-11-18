@@ -12,8 +12,8 @@ import math
 def square_root(a):
     try:
         return math.sqrt(a)
-    except ValueError:
-        print("a cannot be less than 0") # raise ValueError if a < 0
+    except ValueError as e:
+        raise ValueError("a cannot be less than 0") # raise ValueError if a < 0
 def hypotenuse(a, b):
     return math.hypot(a, b) # can have negative nums
 
@@ -33,8 +33,8 @@ def div(a, b):
         return b/a # raise ZeroDivisionError if a == 0
 
 def logarithm(a, b):
-    if b <= 0:
-        raise ValueError
+    if b <= 0 or a<= 0 or a ==1:
+        raise ValueError("Log values are invalid")
     else:
         return math.log(a,b)# use math library/raise ValueError
 
