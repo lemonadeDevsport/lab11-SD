@@ -1,3 +1,6 @@
+#https://github.com/lemonadeDevsport/lab11-SD
+#Sofia De Los Santos
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
