@@ -23,7 +23,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(3, -4), -12)
         self.assertEqual(mul(5, 10), 50)
         self.assertEqual(mul(-1, -1), 1)
-        self.assertNotEqual(mul(0, 100), 0)
+        self.assertEqual(mul(0, 100), 0)
 
     def test_divide(self): # 3 assertions
         self.assertEqual(div(2, 6), 3.0)
