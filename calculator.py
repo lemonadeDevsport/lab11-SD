@@ -35,8 +35,7 @@ def div(a, b):
 def logarithm(a, b):
     if b <= 0 or a<= 0 or a ==1:
         raise ValueError("Log values are invalid")
-    else:
-        return math.log(a,b)# use math library/raise ValueError
+    return math.log(b,a)# use math library/raise ValueError
 
 def exp(a, b):
     return a**b
